@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&family=Karla:wght@400;700&display=swap');
+
+
+:root{
+     /* ## Primary */
+
+--Green: hsl(75, 94%, 57%);
+
+    /* ### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 20%);
+--Dark-Grey: hsl(0, 0%, 12%);
+--Off-Black: hsl(0, 0%, 8%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Inter';
+}
+
+body{
+    background-color: var(--Off-Black);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.card{
+    background-color: var(--Dark-Grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 25%;
+}
+.focus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+.photo{
+    border-radius: 50%;
+    width: 100px;
+}
+.tabs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    gap:1rem;
+    width: 100%;
+}
+.tab{
+    width: 100%;
+    background-color: var(--Grey);
+    border-radius: 10px;
+    padding: 1rem;
+    color: var(--White);
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+.tab:hover{
+    background-color: var(--Green);
+    color: var(--Off-Black);
+}
+.name{
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--White);
+}
+.location{
+    color: var(--Green);
+    font-weight: 400;
+}
+.bio{
+    font-weight: 400;
+    color: var(--White);
+}
+
+
